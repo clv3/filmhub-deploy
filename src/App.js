@@ -75,13 +75,13 @@ const App = props => {
               </HomepageLayout>
   
             )} />
-            <Route path="/registration"  render={() => (
+            <Route path="/filmhub-deploy/registration"  render={() => (
               <MainLayout>
                 <Registration />
               </MainLayout>
   
             )}/>  
-            <Route path="/login"
+            <Route path="/filmhub-deploy/login"
               render={() =>  (
                 <MainLayout>
                   <NavBar/>
@@ -90,14 +90,14 @@ const App = props => {
     
               )}/> 
 
-              <Route path="/recovery" render={() => (
+              <Route path="/filmhub-deploy/recovery" render={() => (
                 <MainLayout>
                   <NavBar/>
                   <Recovery />
                 </MainLayout>
               )} />
 
-              <Route path="/dashboard" render={() => (
+              <Route path="/filmhub-deploy/dashboard" render={() => (
                 <WithAuth>
                 <MainLayout>
                 <NavBar/>
@@ -106,7 +106,7 @@ const App = props => {
                 </WithAuth>
               )} />
 
-              <Route path="/admin" render={() => (
+              <Route path="/filmhub-deploy/admin" render={() => (
                 <WithAdminAuth>
                 <MainLayout>
                 <NavBar/>
@@ -115,7 +115,7 @@ const App = props => {
                 </WithAdminAuth>
               )} />
 
-<Route path="/posts" render={() => (
+<Route path="/filmhub-deploy/posts" render={() => (
                 <WithAdminAuth>
                 <MainLayout>
                 <NavBar/>
@@ -128,7 +128,7 @@ const App = props => {
                 <Viewings />
               )} /> */}
 
-              <Route path="/reviews">
+              <Route path="/filmhub-deploy/reviews">
                 <div className="navbarStick">
                 <NavBar/>
                 <HomepageLayout>
@@ -142,7 +142,7 @@ const App = props => {
 
             </Route>
 
-            <Route path="/showings">            
+            <Route path="/filmhub-deploy/showings">            
              <div className="navbarStick">
                 <NavBar/>
                 <HomepageLayout>
