@@ -75,13 +75,13 @@ const App = props => {
               </HomepageLayout>
   
             )} />
-            <Route path="/filmhub-deploy/registration"  render={() => (
+            <Route path="/registration"  render={() => (
               <MainLayout>
                 <Registration />
               </MainLayout>
   
             )}/>  
-            <Route path="/filmhub-deploy/login"
+            <Route path="/login"
               render={() =>  (
                 <MainLayout>
                   <NavBar/>
@@ -90,14 +90,14 @@ const App = props => {
     
               )}/> 
 
-              <Route path="/filmhub-deploy/recovery" render={() => (
+              <Route path="/recovery" render={() => (
                 <MainLayout>
                   <NavBar/>
                   <Recovery />
                 </MainLayout>
               )} />
 
-              <Route path="/filmhub-deploy/dashboard" render={() => (
+              <Route path="/dashboard" render={() => (
                 <WithAuth>
                 <MainLayout>
                 <NavBar/>
@@ -106,7 +106,7 @@ const App = props => {
                 </WithAuth>
               )} />
 
-              <Route path="/filmhub-deploy/admin" render={() => (
+              <Route path="/admin" render={() => (
                 <WithAdminAuth>
                 <MainLayout>
                 <NavBar/>
@@ -115,7 +115,7 @@ const App = props => {
                 </WithAdminAuth>
               )} />
 
-<Route path="/filmhub-deploy/posts" render={() => (
+<Route path="/posts" render={() => (
                 <WithAdminAuth>
                 <MainLayout>
                 <NavBar/>
@@ -142,7 +142,7 @@ const App = props => {
 
             </Route>
 
-            <Route path="/filmhub-deploy/showings">            
+            <Route path="/showings">            
              <div className="navbarStick">
                 <NavBar/>
                 <HomepageLayout>

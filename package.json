@@ -1,5 +1,6 @@
 {
   "homepage": "http://clv3.github.io/filmhub-deploy",
+  "reviews": "http://clv3.github.io/filmhub-deploy/reviews",
   "name": "react-filmhub",
   "version": "0.1.0",
   "private": true,
